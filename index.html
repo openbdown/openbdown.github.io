@@ -382,6 +382,20 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .reservation-btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-right: 15px;
+        }
+
+        .reservation-btn:hover {
+            background-color: #219a52;
+        }
     </style>
 </head>
 <body>
@@ -389,6 +403,7 @@
         <nav class="nav">
             <div class="logo">B站视频下载器</div>
             <div class="nav-right">
+                <a href="reservation.html" class="reservation-btn">预约新游戏</a>
                 <a href="#" class="download-btn" onclick="checkAndDownload()">立即下载</a>
                 <a href="#" onclick="handleGithubClick(event)" class="github-link" title="访问我的GitHub">
                     <svg class="github-icon" viewBox="0 0 16 16" fill="currentColor">
